@@ -7,14 +7,14 @@ import Link from "next/link";
 import Button from "../ui/Button";
 export const Navbar = () => {
   return (
-    <header className="sticky top-0">
+    <header className="sticky top-0 backdrop-blur-sm z-10">
       <div className="flex  justify-center items-center py-3 gap-3 bg-black">
         <p className="text-white/60 hidden md:block ">
           Streamline your workflow and boost your productivity
         </p>
         <div className="inline-flex gap-1 items-center">
-          <p>Get started for free</p>
-          <ArrowRight className="h-4 w-4 inline-flex justify-center items-center" />
+          <p className="text-white">Get started for free</p>
+          <ArrowRight className="h-4 w-4 inline-flex justify-center items-center text-white" />
         </div>
       </div>
       <div className="py-5">
@@ -29,7 +29,9 @@ export const Navbar = () => {
                     <Link href={item.href}>{item.label}</Link>
                   </li>
                 ))}
-                <Button type="button" title="Get Started" />
+                <Button className="btn-primary" type="button">
+                  Get Started
+                </Button>
               </ul>
             </nav>
           </div>
