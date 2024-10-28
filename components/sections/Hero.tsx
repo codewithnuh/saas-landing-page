@@ -13,12 +13,8 @@ export const Hero = () => {
         <div className="md:flex items-center ">
           {/* Content */}
           <div className="md:w-[470px]">
-            <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 tracking-tight rounded-lg">
-              Version 2.0 is here
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-[#001E80] text-transparent bg-clip-text mt-6">
-              Pathway to the productivity
-            </h1>
+            <div className="tag">Version 2.0 is here</div>
+            <h1 className="h1">Pathway to the productivity</h1>
             <p className="text-xl text-[#010DE3] tracking-tight mt-6">
               Celebrate the joy of accomplishment with an app designed to
               transform your progress, motivate your efforts, and celebrate your
