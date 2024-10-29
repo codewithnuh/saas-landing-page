@@ -20,4 +20,7 @@
   .tag {
     @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 tracking-tight rounded-lg;
   }
+  .p-text {
+    @apply text-center text-xl text-[#010DE3] tracking-tight mt-6;
+  }
 }

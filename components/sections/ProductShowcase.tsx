@@ -13,7 +13,7 @@ export const ProductShowcase = () => {
           <h2 className="h2 md:tracking-normal">
             A more effective way to track progress
           </h2>
-          <p className="text-center text-[22px] md:mt-6 leading-[30px] tracking-tight text-[#010D3E]">
+          <p className="p-text">
             Effortlessly turn your ideas into fully functional,responsive, Saas
             website template written fully typed with Next.js 15 and typescript.
           </p>
