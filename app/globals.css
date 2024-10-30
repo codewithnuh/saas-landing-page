@@ -23,4 +23,7 @@
   .p-text {
     @apply text-center text-xl text-[#010DE3] tracking-tight mt-6;
   }
+  .card {
+    @apply p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#D9D6D6] max-w-xs;
+  }
 }

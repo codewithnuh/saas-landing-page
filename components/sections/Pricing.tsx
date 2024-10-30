@@ -4,7 +4,7 @@ import { CheckIcon } from "lucide-react";
 import { twMerge } from "tailwind-merge";
 export const Pricing = () => {
   return (
-    <section className="py-24">
+    <section className="py-24 bg-white">
       <div className="container">
         <div className="max-w-[540px] mx-auto">
           <h2 className="text-center h2">Pricing</h2>
@@ -14,7 +14,7 @@ export const Pricing = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center gap-6 mt-6 lg:flex-row lg:items-end lg:justify-center">
+      <div className="flex flex-col items-center gap-6 mt-6   lg:flex-row lg:items-end lg:justify-center">
         {pricingTiers.map(
           (
             { buttonText, features, inverse, monthlyPrice, popular, title },
@@ -23,7 +23,7 @@ export const Pricing = () => {
             <div
               key={i}
               className={twMerge(
-                "p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#D9D6D6] max-w-xs ",
+                "card ",
                 inverse === true && "bg-black border-black text-white"
               )}
             >
@@ -53,6 +53,7 @@ export const Pricing = () => {
                 </span>
               </div>
               <Button
+                type="button"
                 className={twMerge(
                   "btn btn-primary w-full mt-8",
                   inverse === true && "bg-white text-black"
