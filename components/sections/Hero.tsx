@@ -26,7 +26,7 @@ export const Hero = () => {
           <div className="md:w-[470px]">
             <div className="tag">Version 2.0 is here</div>
             <h1 className="h1">Pathway to the productivity</h1>
-            <p className="tp-text">
+            <p className="p-text text-left">
               Celebrate the joy of accomplishment with an app designed to
               transform your progress, motivate your efforts, and celebrate your
               success
