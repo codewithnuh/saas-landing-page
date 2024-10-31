@@ -1,20 +1,11 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { twMerge } from "tailwind-merge";
 import { Navbar } from "@/components/sections/Header";
 import { Footer } from "@/components/sections/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const dmSans = DM_Sans({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export const metadata: Metadata = {
   title: "Light Saas landing page",
@@ -28,11 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={twMerge(
-          `${geistSans.variable} ${geistMono.variable} antialiased bg-[#EAEEFE]`
-        )}
-      >
+      <body className={twMerge(`${dmSans.className} antialiased bg-[#EAEEFE]`)}>
         {" "}
         <Navbar />
         {children}
