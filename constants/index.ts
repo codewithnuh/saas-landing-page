@@ -29,6 +29,10 @@ export const navItems = [
     href: "#",
     label: "help",
   },
+  {
+    href: "#",
+    label: "careers",
+  },
 ];
 
 export const pricingTiers = [

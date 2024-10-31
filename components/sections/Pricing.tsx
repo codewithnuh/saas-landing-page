@@ -2,6 +2,7 @@ import { pricingTiers } from "@/constants";
 import Button from "../ui/Button";
 import { CheckIcon } from "lucide-react";
 import { twMerge } from "tailwind-merge";
+import { MotionSpan } from "../ui/Motion";
 export const Pricing = () => {
   return (
     <section className="py-24 bg-white">
@@ -38,9 +39,19 @@ export const Pricing = () => {
                 </h3>
                 {popular && (
                   <div className="inline-flex text-sm px-4 py-1.5 rounded-xl border border-white/20">
-                    <span className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF)] py-1 bg-clip-text text-transparent font-medium">
+                    <MotionSpan
+                      animate={{
+                        backgroundPositionX: "100%",
+                      }}
+                      transition={{
+                        duration: 1,
+                        repeat: Infinity,
+                        repeatType: "loop",
+                      }}
+                      className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#E1CD86,#BBCB92,#71C2EF)] [background-size:200%] py-1 bg-clip-text text-transparent font-medium"
+                    >
                       Popular
-                    </span>
+                    </MotionSpan>
                   </div>
                 )}
               </div>
