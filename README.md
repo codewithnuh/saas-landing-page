@@ -13,7 +13,7 @@
   <h3 align="center">A Modern and Elegant SaaS Landing Page</h3>
 
    <div align="center">
-     Learn how to create stunning user interfaces and smooth animations step by step in our tutorial series on <a href="https://www.youtube.com/@YourChannel" target="_blank"><b>Your Channel Name</b></a>. Perfect for enhancing UI and animations in your projects!
+     Learn how to create stunning user interfaces and smooth animations step by step in this repo. Perfect for enhancing UI and animations in your projects!
     </div>
 </div>
 
@@ -64,11 +64,11 @@ Ensure you have the following installed:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/light-saas-landing-page.git
+   git clone  https://github.com/codewithnuh/saas-landing-page.git
    ```
 2. **Navigate to the Project Directory**:
    ```bash
-   cd light-saas-landing-page
+   cd saas-landing-page
    ```
 3. **Install Dependencies**:
    ```bash
@@ -81,5 +81,7 @@ Ensure you have the following installed:
    ```
 
 5. **Visit**: Open your browser and go to `http://localhost:3000` to see the project in action.
+
+6. **Live URL** [light-saas-landing-page](https://light-landingpage.vercel.app)
 
 Enjoy building your modern, animated landing page with **Light SaaS Landing Page**!
