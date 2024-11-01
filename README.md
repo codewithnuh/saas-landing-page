@@ -72,7 +72,7 @@ Ensure you have the following installed:
    ```
 3. **Install Dependencies**:
    ```bash
-   npm install
+   npm install --legacy-peer-deps
    ```
 
 4. **Run the Application**:
